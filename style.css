@@ -1,0 +1,278 @@
+html,
+body {
+    height: 100%;
+}
+
+@keyframes bgcolor {
+    0% {
+        background-color: #ffdcab;
+    }
+    30% {
+        background-color: #ffd69c;
+    }
+    60% {
+        background-color: #ffca80;
+    }
+    90% {
+        background-color: #ffd69c;
+    }
+    100% {
+        background-color: #ffdcab;
+    }
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+#options {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 500px;
+    right: 10%;
+    top: 35%;
+    margin-left: -300px;
+    align-items: flex-start;
+}
+
+#new_game {
+    background-color: #eb880f;
+    color: white;
+    border-radius: 4px;
+    padding: 20px 40px;
+    transition-duration: 0.4s;
+    position: absolute;
+}
+
+#wrapper {
+    background-color: azure;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 90px 70px;
+    position: relative;
+    top: 13%;
+    font-size: 30px;
+    font-style: italic;
+    margin: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#score_text {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(46, 46, 46);
+    padding: 15px 15px;
+    position: absolute;
+    top: -15%;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+
+#score {
+    padding: 15px 15px;
+    position: absolute;
+    top: 13%;
+    font-size: 45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#new_game:hover {
+    background-color: #e89835;
+    color: white;
+}
+
+#cTitulo {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: rgb(255, 185, 0);
+    font-style: italic;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    text-align: center;
+}
+
+#challenges {
+    background-color: azure;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 25px 70px;
+    position: relative;
+    white-space: pre-line;
+    width: 400px;
+    height: 745px;
+    font-size: 25px;
+    margin-left: 2.4px;
+    order: 2;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#c {
+    font-size: 15px;
+}
+
+#Somatorio {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin: 2px;
+}
+
+#c1P {
+    background-color: rgb(92, 92, 92);
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 95px;
+    height: 75px;
+    margin: 0 auto;
+    padding: 0px;
+    position: sticky;
+    align-items: center;
+}
+
+#c2P {
+    background-color: rgb(92, 92, 92);
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 95px;
+    height: 75px;
+    margin: 0 auto;
+    padding: 0px;
+    position: sticky;
+    align-items: center;
+}
+
+#c3P {
+    background-color: rgb(92, 92, 92);
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 95px;
+    height: 75px;
+    margin: 0 auto;
+    padding: 0px;
+    position: sticky;
+    align-items: center;
+}
+
+#cSP {
+    background-color: rgb(92, 92, 92);
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 95px;
+    height: 75px;
+    margin: 0 auto;
+    padding: 0px;
+    position: sticky;
+    align-items: center;
+}
+
+#P1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+}
+
+#P2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+}
+
+#P3 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+}
+
+#S {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+}
+
+@-webkit-keyframes colorchange {
+    0% {
+        color: orange;
+    }
+    10% {
+        color: rgb(255, 184, 52);
+    }
+    20% {
+        color: rgb(255, 201, 101);
+    }
+    30% {
+        color: rgb(255, 213, 136);
+    }
+    40% {
+        color: rgb(255, 216, 143);
+    }
+    50% {
+        color: rgb(255, 200, 99);
+    }
+    60% {
+        color: rgb(255, 187, 62);
+    }
+    70% {
+        color: orange;
+    }
+    80% {
+        color: rgb(255, 196, 86);
+    }
+    90% {
+        color: rgb(255, 211, 129);
+    }
+    100% {
+        color: orange;
+    }
+}
+
+#title {
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    margin-top: -650px;
+    left: 600px;
+}
+
+#titulo {
+    font-size: 1250%;
+    color: #bd6105;
+    margin: 0;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    -webkit-animation: colorchange 20s infinite alternate;
+}
+
+#htp {
+    background-color: azure;
+    color: black;
+    border-radius: 4px;
+    padding: 10px 20px;
+    top: 50.5%;
+    transition-duration: 0.4s;
+    position: absolute;
+}
+
+#plus {
+    float: left;
+    position: absolute;
+    top: 75%;
+    font-size: small;
+    color: rgb(75, 75, 75);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

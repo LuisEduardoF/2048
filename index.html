@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <link rel="icon" type="image/gif/png" href="static/logo-removebg-preview.png">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+    <script src="sketch.js"></script>
+    <script src="main.js"></script>
+    <script src="controllers.js"></script>
+    <script type="text/javascript">
+        function HTP() {
+            alert("Clique nas setinhas para movimentar as peças;\nCada vez que você movimenta as peças, uma peça nova é colocada no tabuleiro ( 2 ou 4 );\nQuando juntar duas peças iguais some elas em uma peça só !\nVocê perde o jogo se todas as posições estiverem cheias e sem possibilidade de juntar peças.\nO Objetivo do jogo é conseguir completar a peça de valor 2048, Boa Sorte !");
+        }
+    </script>
+    <title> 2048 </title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="style.css">
+    <div id="title">
+        <h1 id="titulo">
+            2048
+        </h1>
+    </div>
+    <div id="options">
+        <button id="new_game" onClick="window.location.reload();">Novo Jogo</button>
+        <div id="wrapper">
+            <h1 id="score_text">SCORE:</h1>
+            <h1 id="score">0</h1>
+            <div id="plus">
+                <h1 id="add_points">AAAAAA</h1>
+            </div>
+        </div>
+        <button id="htp" onClick="HTP()"> How to play
+            </button>
+    </div>
+    <div id="challenges">
+        <h2 id="cTitulo">CHALLENGES 🏆</h2>
+        <div id="c">
+            <h3 id="c1"></h3>
+            <div id="c1P">
+                <div id="P1"></div>
+            </div>
+            <h3 id="c2"></h3>
+            <div id="c2P">
+                <div id="P2"></div>
+            </div>
+            <h3 id="c3"></h3>
+            <div id="c3P">
+                <div id="P3"></div>
+            </div>
+            <h3 id="Somatorio">- Completar todos os desafios</h3>
+            <div id="cSP">
+                <div id="S">+100</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
